@@ -10,10 +10,11 @@ source = input('请输入计算式')
 def check(s):
     flag = True
     if re.findall(r'[^0-9\+\-\*\/\s\(\)]',s):
+        print('包含非法字符')
         flag = False
 
     if s.count('(') != s.count(')'):
-        print('Invalid string')
+        print('括号未闭合')
         flag = False
 
     return flag
@@ -63,6 +64,7 @@ def calculate(s):
 
     # 返回计算结果
     return s
+
 
 if check(source):
     source = formatter(source)
