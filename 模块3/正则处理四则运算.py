@@ -3,9 +3,9 @@
 import re
 import sys
 
-source = '1-3*(3+19)*(1-17+20/0)*3'
+# source = '1-3*(3+19)*(1-17+20/0)*3'
 # source = '-65.0*-48.0'
-# source = input('请输入计算式')
+source = input('请输入计算式')
 
 # 检查输入是否合法
 def check(s):
